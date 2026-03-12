@@ -6,8 +6,8 @@ part of 'budget_category.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_BudgetCategory _$BudgetCategoryFromJson(Map<String, dynamic> json) =>
-    _BudgetCategory(
+_$BudgetCategoryImpl _$$BudgetCategoryImplFromJson(Map<String, dynamic> json) =>
+    _$BudgetCategoryImpl(
       id: json['id'] as String,
       name: json['name'] as String,
       percentageAllocation: (json['percentageAllocation'] as num).toDouble(),
@@ -15,7 +15,8 @@ _BudgetCategory _$BudgetCategoryFromJson(Map<String, dynamic> json) =>
       iconName: json['iconName'] as String,
     );
 
-Map<String, dynamic> _$BudgetCategoryToJson(_BudgetCategory instance) =>
+Map<String, dynamic> _$$BudgetCategoryImplToJson(
+        _$BudgetCategoryImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
