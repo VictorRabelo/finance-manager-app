@@ -14,8 +14,8 @@ part 'app_router.g.dart';
 final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>();
 final GlobalKey<NavigatorState> _shellNavigatorKey = GlobalKey<NavigatorState>();
 
-@riverpod
-GoRouter appRouter(AppRouterRef ref) {
+@Riverpod(keepAlive: true)
+GoRouter appRouter(Ref ref) {
   return GoRouter(
     navigatorKey: _rootNavigatorKey,
     initialLocation: '/home',

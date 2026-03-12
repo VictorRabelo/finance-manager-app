@@ -13,7 +13,7 @@ class FinanceManagerApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final router = ref.watch(appRouterLocatorProvider);
+    final router = ref.watch(appRouterProvider);
     return MaterialApp.router(
       title: 'Finance Manager',
       theme: AppTheme.lightTheme,
@@ -23,6 +23,3 @@ class FinanceManagerApp extends ConsumerWidget {
     );
   }
 }
-
-// Temporary provider just to make it compile until we generate the riverpod
-final appRouterLocatorProvider = Provider((ref) => ref.watch(appRouterProvider));
