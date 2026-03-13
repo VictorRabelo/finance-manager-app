@@ -1,5 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,281 +9,232 @@ part of 'budget_category.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// dart format off
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+
+BudgetCategory _$BudgetCategoryFromJson(Map<String, dynamic> json) {
+  return _BudgetCategory.fromJson(json);
+}
 
 /// @nodoc
 mixin _$BudgetCategory {
+  String get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  double get percentageAllocation => throw _privateConstructorUsedError;
+  String get colorHex => throw _privateConstructorUsedError;
+  String get iconName => throw _privateConstructorUsedError;
 
- String get id; String get name; double get percentageAllocation; String get colorHex; String get iconName;
-/// Create a copy of BudgetCategory
-/// with the given fields replaced by the non-null parameter values.
-@JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-$BudgetCategoryCopyWith<BudgetCategory> get copyWith => _$BudgetCategoryCopyWithImpl<BudgetCategory>(this as BudgetCategory, _$identity);
-
-  /// Serializes this BudgetCategory to a JSON map.
-  Map<String, dynamic> toJson();
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is BudgetCategory&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.percentageAllocation, percentageAllocation) || other.percentageAllocation == percentageAllocation)&&(identical(other.colorHex, colorHex) || other.colorHex == colorHex)&&(identical(other.iconName, iconName) || other.iconName == iconName));
-}
-
-@JsonKey(includeFromJson: false, includeToJson: false)
-@override
-int get hashCode => Object.hash(runtimeType,id,name,percentageAllocation,colorHex,iconName);
-
-@override
-String toString() {
-  return 'BudgetCategory(id: $id, name: $name, percentageAllocation: $percentageAllocation, colorHex: $colorHex, iconName: $iconName)';
-}
-
-
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $BudgetCategoryCopyWith<BudgetCategory> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $BudgetCategoryCopyWith<$Res>  {
-  factory $BudgetCategoryCopyWith(BudgetCategory value, $Res Function(BudgetCategory) _then) = _$BudgetCategoryCopyWithImpl;
-@useResult
-$Res call({
- String id, String name, double percentageAllocation, String colorHex, String iconName
-});
-
-
-
-
+abstract class $BudgetCategoryCopyWith<$Res> {
+  factory $BudgetCategoryCopyWith(
+          BudgetCategory value, $Res Function(BudgetCategory) then) =
+      _$BudgetCategoryCopyWithImpl<$Res, BudgetCategory>;
+  @useResult
+  $Res call(
+      {String id,
+      String name,
+      double percentageAllocation,
+      String colorHex,
+      String iconName});
 }
+
 /// @nodoc
-class _$BudgetCategoryCopyWithImpl<$Res>
+class _$BudgetCategoryCopyWithImpl<$Res, $Val extends BudgetCategory>
     implements $BudgetCategoryCopyWith<$Res> {
-  _$BudgetCategoryCopyWithImpl(this._self, this._then);
+  _$BudgetCategoryCopyWithImpl(this._value, this._then);
 
-  final BudgetCategory _self;
-  final $Res Function(BudgetCategory) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
-/// Create a copy of BudgetCategory
-/// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? name = null,Object? percentageAllocation = null,Object? colorHex = null,Object? iconName = null,}) {
-  return _then(_self.copyWith(
-id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
-as String,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
-as String,percentageAllocation: null == percentageAllocation ? _self.percentageAllocation : percentageAllocation // ignore: cast_nullable_to_non_nullable
-as double,colorHex: null == colorHex ? _self.colorHex : colorHex // ignore: cast_nullable_to_non_nullable
-as String,iconName: null == iconName ? _self.iconName : iconName // ignore: cast_nullable_to_non_nullable
-as String,
-  ));
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? name = null,
+    Object? percentageAllocation = null,
+    Object? colorHex = null,
+    Object? iconName = null,
+  }) {
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      percentageAllocation: null == percentageAllocation
+          ? _value.percentageAllocation
+          : percentageAllocation // ignore: cast_nullable_to_non_nullable
+              as double,
+      colorHex: null == colorHex
+          ? _value.colorHex
+          : colorHex // ignore: cast_nullable_to_non_nullable
+              as String,
+      iconName: null == iconName
+          ? _value.iconName
+          : iconName // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
+  }
 }
 
+/// @nodoc
+abstract class _$$BudgetCategoryImplCopyWith<$Res>
+    implements $BudgetCategoryCopyWith<$Res> {
+  factory _$$BudgetCategoryImplCopyWith(_$BudgetCategoryImpl value,
+          $Res Function(_$BudgetCategoryImpl) then) =
+      __$$BudgetCategoryImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      String name,
+      double percentageAllocation,
+      String colorHex,
+      String iconName});
 }
 
+/// @nodoc
+class __$$BudgetCategoryImplCopyWithImpl<$Res>
+    extends _$BudgetCategoryCopyWithImpl<$Res, _$BudgetCategoryImpl>
+    implements _$$BudgetCategoryImplCopyWith<$Res> {
+  __$$BudgetCategoryImplCopyWithImpl(
+      _$BudgetCategoryImpl _value, $Res Function(_$BudgetCategoryImpl) _then)
+      : super(_value, _then);
 
-/// Adds pattern-matching-related methods to [BudgetCategory].
-extension BudgetCategoryPatterns on BudgetCategory {
-/// A variant of `map` that fallback to returning `orElse`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
-
-@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _BudgetCategory value)?  $default,{required TResult orElse(),}){
-final _that = this;
-switch (_that) {
-case _BudgetCategory() when $default != null:
-return $default(_that);case _:
-  return orElse();
-
-}
-}
-/// A `switch`-like method, using callbacks.
-///
-/// Callbacks receives the raw object, upcasted.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case final Subclass2 value:
-///     return ...;
-/// }
-/// ```
-
-@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _BudgetCategory value)  $default,){
-final _that = this;
-switch (_that) {
-case _BudgetCategory():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
-}
-/// A variant of `map` that fallback to returning `null`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
-
-@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _BudgetCategory value)?  $default,){
-final _that = this;
-switch (_that) {
-case _BudgetCategory() when $default != null:
-return $default(_that);case _:
-  return null;
-
-}
-}
-/// A variant of `when` that fallback to an `orElse` callback.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
-
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String name,  double percentageAllocation,  String colorHex,  String iconName)?  $default,{required TResult orElse(),}) {final _that = this;
-switch (_that) {
-case _BudgetCategory() when $default != null:
-return $default(_that.id,_that.name,_that.percentageAllocation,_that.colorHex,_that.iconName);case _:
-  return orElse();
-
-}
-}
-/// A `switch`-like method, using callbacks.
-///
-/// As opposed to `map`, this offers destructuring.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case Subclass2(:final field2):
-///     return ...;
-/// }
-/// ```
-
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String name,  double percentageAllocation,  String colorHex,  String iconName)  $default,) {final _that = this;
-switch (_that) {
-case _BudgetCategory():
-return $default(_that.id,_that.name,_that.percentageAllocation,_that.colorHex,_that.iconName);case _:
-  throw StateError('Unexpected subclass');
-
-}
-}
-/// A variant of `when` that fallback to returning `null`
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
-
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String name,  double percentageAllocation,  String colorHex,  String iconName)?  $default,) {final _that = this;
-switch (_that) {
-case _BudgetCategory() when $default != null:
-return $default(_that.id,_that.name,_that.percentageAllocation,_that.colorHex,_that.iconName);case _:
-  return null;
-
-}
-}
-
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? name = null,
+    Object? percentageAllocation = null,
+    Object? colorHex = null,
+    Object? iconName = null,
+  }) {
+    return _then(_$BudgetCategoryImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      percentageAllocation: null == percentageAllocation
+          ? _value.percentageAllocation
+          : percentageAllocation // ignore: cast_nullable_to_non_nullable
+              as double,
+      colorHex: null == colorHex
+          ? _value.colorHex
+          : colorHex // ignore: cast_nullable_to_non_nullable
+              as String,
+      iconName: null == iconName
+          ? _value.iconName
+          : iconName // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
 /// @nodoc
 @JsonSerializable()
+class _$BudgetCategoryImpl implements _BudgetCategory {
+  const _$BudgetCategoryImpl(
+      {required this.id,
+      required this.name,
+      required this.percentageAllocation,
+      required this.colorHex,
+      required this.iconName});
 
-class _BudgetCategory implements BudgetCategory {
-  const _BudgetCategory({required this.id, required this.name, required this.percentageAllocation, required this.colorHex, required this.iconName});
-  factory _BudgetCategory.fromJson(Map<String, dynamic> json) => _$BudgetCategoryFromJson(json);
+  factory _$BudgetCategoryImpl.fromJson(Map<String, dynamic> json) =>
+      _$$BudgetCategoryImplFromJson(json);
 
-@override final  String id;
-@override final  String name;
-@override final  double percentageAllocation;
-@override final  String colorHex;
-@override final  String iconName;
+  @override
+  final String id;
+  @override
+  final String name;
+  @override
+  final double percentageAllocation;
+  @override
+  final String colorHex;
+  @override
+  final String iconName;
 
-/// Create a copy of BudgetCategory
-/// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-_$BudgetCategoryCopyWith<_BudgetCategory> get copyWith => __$BudgetCategoryCopyWithImpl<_BudgetCategory>(this, _$identity);
+  @override
+  String toString() {
+    return 'BudgetCategory(id: $id, name: $name, percentageAllocation: $percentageAllocation, colorHex: $colorHex, iconName: $iconName)';
+  }
 
-@override
-Map<String, dynamic> toJson() {
-  return _$BudgetCategoryToJson(this, );
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$BudgetCategoryImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.percentageAllocation, percentageAllocation) ||
+                other.percentageAllocation == percentageAllocation) &&
+            (identical(other.colorHex, colorHex) ||
+                other.colorHex == colorHex) &&
+            (identical(other.iconName, iconName) ||
+                other.iconName == iconName));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, id, name, percentageAllocation, colorHex, iconName);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$BudgetCategoryImplCopyWith<_$BudgetCategoryImpl> get copyWith =>
+      __$$BudgetCategoryImplCopyWithImpl<_$BudgetCategoryImpl>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$BudgetCategoryImplToJson(
+      this,
+    );
+  }
 }
 
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _BudgetCategory&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.percentageAllocation, percentageAllocation) || other.percentageAllocation == percentageAllocation)&&(identical(other.colorHex, colorHex) || other.colorHex == colorHex)&&(identical(other.iconName, iconName) || other.iconName == iconName));
+abstract class _BudgetCategory implements BudgetCategory {
+  const factory _BudgetCategory(
+      {required final String id,
+      required final String name,
+      required final double percentageAllocation,
+      required final String colorHex,
+      required final String iconName}) = _$BudgetCategoryImpl;
+
+  factory _BudgetCategory.fromJson(Map<String, dynamic> json) =
+      _$BudgetCategoryImpl.fromJson;
+
+  @override
+  String get id;
+  @override
+  String get name;
+  @override
+  double get percentageAllocation;
+  @override
+  String get colorHex;
+  @override
+  String get iconName;
+  @override
+  @JsonKey(ignore: true)
+  _$$BudgetCategoryImplCopyWith<_$BudgetCategoryImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-@JsonKey(includeFromJson: false, includeToJson: false)
-@override
-int get hashCode => Object.hash(runtimeType,id,name,percentageAllocation,colorHex,iconName);
-
-@override
-String toString() {
-  return 'BudgetCategory(id: $id, name: $name, percentageAllocation: $percentageAllocation, colorHex: $colorHex, iconName: $iconName)';
-}
-
-
-}
-
-/// @nodoc
-abstract mixin class _$BudgetCategoryCopyWith<$Res> implements $BudgetCategoryCopyWith<$Res> {
-  factory _$BudgetCategoryCopyWith(_BudgetCategory value, $Res Function(_BudgetCategory) _then) = __$BudgetCategoryCopyWithImpl;
-@override @useResult
-$Res call({
- String id, String name, double percentageAllocation, String colorHex, String iconName
-});
-
-
-
-
-}
-/// @nodoc
-class __$BudgetCategoryCopyWithImpl<$Res>
-    implements _$BudgetCategoryCopyWith<$Res> {
-  __$BudgetCategoryCopyWithImpl(this._self, this._then);
-
-  final _BudgetCategory _self;
-  final $Res Function(_BudgetCategory) _then;
-
-/// Create a copy of BudgetCategory
-/// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? name = null,Object? percentageAllocation = null,Object? colorHex = null,Object? iconName = null,}) {
-  return _then(_BudgetCategory(
-id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
-as String,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
-as String,percentageAllocation: null == percentageAllocation ? _self.percentageAllocation : percentageAllocation // ignore: cast_nullable_to_non_nullable
-as double,colorHex: null == colorHex ? _self.colorHex : colorHex // ignore: cast_nullable_to_non_nullable
-as String,iconName: null == iconName ? _self.iconName : iconName // ignore: cast_nullable_to_non_nullable
-as String,
-  ));
-}
-
-
-}
-
-// dart format on

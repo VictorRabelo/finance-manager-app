@@ -4,7 +4,6 @@
 
 list(APPEND FLUTTER_PLUGIN_LIST
   isar_flutter_libs
-  record_windows
   speech_to_text_windows
 )
 

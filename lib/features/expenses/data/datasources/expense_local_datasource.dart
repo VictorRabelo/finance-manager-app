@@ -1,44 +1,52 @@
+import 'package:isar/isar.dart';
+
 import '../models/budget_category_model.dart';
 import '../models/expense_model.dart';
 
-/// Temporary local datasource implementation.
-///
-/// This keeps the data layer compiling and testable while Isar generators are
-/// being stabilized. Replace this in-memory implementation with Isar-backed
-/// collections once `build_runner` generation is available in your environment.
 class ExpenseLocalDataSource {
-  final List<ExpenseModel> _expenses = <ExpenseModel>[];
-  final List<BudgetCategoryModel> _categories = <BudgetCategoryModel>[];
+  final Isar isar;
 
-  Future<List<ExpenseModel>> getExpenses() async => List.unmodifiable(_expenses);
+  ExpenseLocalDataSource(this.isar);
+
+  Future<List<ExpenseModel>> getExpenses() async {
+    return isar.expenseModels.where().findAll();
+  }
 
   Future<ExpenseModel?> getExpenseById(String id) async {
-    for (final expense in _expenses) {
-      if (expense.originalId == id) {
-        return expense;
-      }
-    }
-    return null;
+    return isar.expenseModels.filter().originalIdEqualTo(id).findFirst();
   }
 
   Future<void> saveExpense(ExpenseModel expense) async {
-    _expenses.removeWhere((item) => item.originalId == expense.originalId);
-    _expenses.add(expense);
+    await isar.writeTxn(() async {
+      await isar.expenseModels.put(expense);
+    });
   }
 
   Future<void> deleteExpense(String id) async {
-    _expenses.removeWhere((item) => item.originalId == id);
+    await isar.writeTxn(() async {
+      final expense = await getExpenseById(id);
+      if (expense != null) {
+        await isar.expenseModels.delete(expense.id);
+      }
+    });
   }
 
-  Future<List<BudgetCategoryModel>> getCategories() async =>
-      List.unmodifiable(_categories);
+  Future<List<BudgetCategoryModel>> getCategories() async {
+    return isar.budgetCategoryModels.where().findAll();
+  }
 
   Future<void> saveCategory(BudgetCategoryModel category) async {
-    _categories.removeWhere((item) => item.originalId == category.originalId);
-    _categories.add(category);
+    await isar.writeTxn(() async {
+      await isar.budgetCategoryModels.put(category);
+    });
   }
 
   Future<void> deleteCategory(String id) async {
-    _categories.removeWhere((item) => item.originalId == id);
+    await isar.writeTxn(() async {
+      final category = await isar.budgetCategoryModels.filter().originalIdEqualTo(id).findFirst();
+      if (category != null) {
+        await isar.budgetCategoryModels.delete(category.id);
+      }
+    });
   }
 }

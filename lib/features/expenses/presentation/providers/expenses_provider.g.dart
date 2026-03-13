@@ -1,24 +1,25 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'app_router.dart';
+part of 'expenses_provider.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$appRouterHash() => r'53916a2795b90b1fedc13ee86e052628234e4353';
+String _$expensesHash() => r'a44788d7b0510d14ab2060d5d61ec2f46a201669';
 
-/// See also [appRouter].
-@ProviderFor(appRouter)
-final appRouterProvider = Provider<GoRouter>.internal(
-  appRouter,
-  name: r'appRouterProvider',
+/// See also [Expenses].
+@ProviderFor(Expenses)
+final expensesProvider =
+    AutoDisposeAsyncNotifierProvider<Expenses, List<Expense>>.internal(
+  Expenses.new,
+  name: r'expensesProvider',
   debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$appRouterHash,
+      const bool.fromEnvironment('dart.vm.product') ? null : _$expensesHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef AppRouterRef = ProviderRef<GoRouter>;
+typedef _$Expenses = AutoDisposeAsyncNotifier<List<Expense>>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

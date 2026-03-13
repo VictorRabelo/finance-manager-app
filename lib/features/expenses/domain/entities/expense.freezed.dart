@@ -1,5 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,287 +9,268 @@ part of 'expense.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// dart format off
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+
+Expense _$ExpenseFromJson(Map<String, dynamic> json) {
+  return _Expense.fromJson(json);
+}
 
 /// @nodoc
 mixin _$Expense {
+  String get id => throw _privateConstructorUsedError;
+  double get amount => throw _privateConstructorUsedError;
+  String get description => throw _privateConstructorUsedError;
+  DateTime get date => throw _privateConstructorUsedError;
+  String get categoryId => throw _privateConstructorUsedError;
+  String? get attachmentPath => throw _privateConstructorUsedError;
+  String? get voiceNotePath => throw _privateConstructorUsedError;
 
- String get id; double get amount; String get description; DateTime get date; String get categoryId; String? get attachmentPath; String? get voiceNotePath;
-/// Create a copy of Expense
-/// with the given fields replaced by the non-null parameter values.
-@JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-$ExpenseCopyWith<Expense> get copyWith => _$ExpenseCopyWithImpl<Expense>(this as Expense, _$identity);
-
-  /// Serializes this Expense to a JSON map.
-  Map<String, dynamic> toJson();
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is Expense&&(identical(other.id, id) || other.id == id)&&(identical(other.amount, amount) || other.amount == amount)&&(identical(other.description, description) || other.description == description)&&(identical(other.date, date) || other.date == date)&&(identical(other.categoryId, categoryId) || other.categoryId == categoryId)&&(identical(other.attachmentPath, attachmentPath) || other.attachmentPath == attachmentPath)&&(identical(other.voiceNotePath, voiceNotePath) || other.voiceNotePath == voiceNotePath));
-}
-
-@JsonKey(includeFromJson: false, includeToJson: false)
-@override
-int get hashCode => Object.hash(runtimeType,id,amount,description,date,categoryId,attachmentPath,voiceNotePath);
-
-@override
-String toString() {
-  return 'Expense(id: $id, amount: $amount, description: $description, date: $date, categoryId: $categoryId, attachmentPath: $attachmentPath, voiceNotePath: $voiceNotePath)';
-}
-
-
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $ExpenseCopyWith<Expense> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $ExpenseCopyWith<$Res>  {
-  factory $ExpenseCopyWith(Expense value, $Res Function(Expense) _then) = _$ExpenseCopyWithImpl;
-@useResult
-$Res call({
- String id, double amount, String description, DateTime date, String categoryId, String? attachmentPath, String? voiceNotePath
-});
-
-
-
-
+abstract class $ExpenseCopyWith<$Res> {
+  factory $ExpenseCopyWith(Expense value, $Res Function(Expense) then) =
+      _$ExpenseCopyWithImpl<$Res, Expense>;
+  @useResult
+  $Res call(
+      {String id,
+      double amount,
+      String description,
+      DateTime date,
+      String categoryId,
+      String? attachmentPath,
+      String? voiceNotePath});
 }
+
 /// @nodoc
-class _$ExpenseCopyWithImpl<$Res>
+class _$ExpenseCopyWithImpl<$Res, $Val extends Expense>
     implements $ExpenseCopyWith<$Res> {
-  _$ExpenseCopyWithImpl(this._self, this._then);
+  _$ExpenseCopyWithImpl(this._value, this._then);
 
-  final Expense _self;
-  final $Res Function(Expense) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
-/// Create a copy of Expense
-/// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? amount = null,Object? description = null,Object? date = null,Object? categoryId = null,Object? attachmentPath = freezed,Object? voiceNotePath = freezed,}) {
-  return _then(_self.copyWith(
-id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
-as String,amount: null == amount ? _self.amount : amount // ignore: cast_nullable_to_non_nullable
-as double,description: null == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
-as String,date: null == date ? _self.date : date // ignore: cast_nullable_to_non_nullable
-as DateTime,categoryId: null == categoryId ? _self.categoryId : categoryId // ignore: cast_nullable_to_non_nullable
-as String,attachmentPath: freezed == attachmentPath ? _self.attachmentPath : attachmentPath // ignore: cast_nullable_to_non_nullable
-as String?,voiceNotePath: freezed == voiceNotePath ? _self.voiceNotePath : voiceNotePath // ignore: cast_nullable_to_non_nullable
-as String?,
-  ));
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? amount = null,
+    Object? description = null,
+    Object? date = null,
+    Object? categoryId = null,
+    Object? attachmentPath = freezed,
+    Object? voiceNotePath = freezed,
+  }) {
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      amount: null == amount
+          ? _value.amount
+          : amount // ignore: cast_nullable_to_non_nullable
+              as double,
+      description: null == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      date: null == date
+          ? _value.date
+          : date // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      categoryId: null == categoryId
+          ? _value.categoryId
+          : categoryId // ignore: cast_nullable_to_non_nullable
+              as String,
+      attachmentPath: freezed == attachmentPath
+          ? _value.attachmentPath
+          : attachmentPath // ignore: cast_nullable_to_non_nullable
+              as String?,
+      voiceNotePath: freezed == voiceNotePath
+          ? _value.voiceNotePath
+          : voiceNotePath // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
+  }
 }
 
+/// @nodoc
+abstract class _$$ExpenseImplCopyWith<$Res> implements $ExpenseCopyWith<$Res> {
+  factory _$$ExpenseImplCopyWith(
+          _$ExpenseImpl value, $Res Function(_$ExpenseImpl) then) =
+      __$$ExpenseImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      double amount,
+      String description,
+      DateTime date,
+      String categoryId,
+      String? attachmentPath,
+      String? voiceNotePath});
 }
 
+/// @nodoc
+class __$$ExpenseImplCopyWithImpl<$Res>
+    extends _$ExpenseCopyWithImpl<$Res, _$ExpenseImpl>
+    implements _$$ExpenseImplCopyWith<$Res> {
+  __$$ExpenseImplCopyWithImpl(
+      _$ExpenseImpl _value, $Res Function(_$ExpenseImpl) _then)
+      : super(_value, _then);
 
-/// Adds pattern-matching-related methods to [Expense].
-extension ExpensePatterns on Expense {
-/// A variant of `map` that fallback to returning `orElse`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
-
-@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _Expense value)?  $default,{required TResult orElse(),}){
-final _that = this;
-switch (_that) {
-case _Expense() when $default != null:
-return $default(_that);case _:
-  return orElse();
-
-}
-}
-/// A `switch`-like method, using callbacks.
-///
-/// Callbacks receives the raw object, upcasted.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case final Subclass2 value:
-///     return ...;
-/// }
-/// ```
-
-@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _Expense value)  $default,){
-final _that = this;
-switch (_that) {
-case _Expense():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
-}
-/// A variant of `map` that fallback to returning `null`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
-
-@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _Expense value)?  $default,){
-final _that = this;
-switch (_that) {
-case _Expense() when $default != null:
-return $default(_that);case _:
-  return null;
-
-}
-}
-/// A variant of `when` that fallback to an `orElse` callback.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
-
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  double amount,  String description,  DateTime date,  String categoryId,  String? attachmentPath,  String? voiceNotePath)?  $default,{required TResult orElse(),}) {final _that = this;
-switch (_that) {
-case _Expense() when $default != null:
-return $default(_that.id,_that.amount,_that.description,_that.date,_that.categoryId,_that.attachmentPath,_that.voiceNotePath);case _:
-  return orElse();
-
-}
-}
-/// A `switch`-like method, using callbacks.
-///
-/// As opposed to `map`, this offers destructuring.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case Subclass2(:final field2):
-///     return ...;
-/// }
-/// ```
-
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  double amount,  String description,  DateTime date,  String categoryId,  String? attachmentPath,  String? voiceNotePath)  $default,) {final _that = this;
-switch (_that) {
-case _Expense():
-return $default(_that.id,_that.amount,_that.description,_that.date,_that.categoryId,_that.attachmentPath,_that.voiceNotePath);case _:
-  throw StateError('Unexpected subclass');
-
-}
-}
-/// A variant of `when` that fallback to returning `null`
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
-
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  double amount,  String description,  DateTime date,  String categoryId,  String? attachmentPath,  String? voiceNotePath)?  $default,) {final _that = this;
-switch (_that) {
-case _Expense() when $default != null:
-return $default(_that.id,_that.amount,_that.description,_that.date,_that.categoryId,_that.attachmentPath,_that.voiceNotePath);case _:
-  return null;
-
-}
-}
-
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? amount = null,
+    Object? description = null,
+    Object? date = null,
+    Object? categoryId = null,
+    Object? attachmentPath = freezed,
+    Object? voiceNotePath = freezed,
+  }) {
+    return _then(_$ExpenseImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      amount: null == amount
+          ? _value.amount
+          : amount // ignore: cast_nullable_to_non_nullable
+              as double,
+      description: null == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      date: null == date
+          ? _value.date
+          : date // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      categoryId: null == categoryId
+          ? _value.categoryId
+          : categoryId // ignore: cast_nullable_to_non_nullable
+              as String,
+      attachmentPath: freezed == attachmentPath
+          ? _value.attachmentPath
+          : attachmentPath // ignore: cast_nullable_to_non_nullable
+              as String?,
+      voiceNotePath: freezed == voiceNotePath
+          ? _value.voiceNotePath
+          : voiceNotePath // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
 }
 
 /// @nodoc
 @JsonSerializable()
+class _$ExpenseImpl implements _Expense {
+  const _$ExpenseImpl(
+      {required this.id,
+      required this.amount,
+      required this.description,
+      required this.date,
+      required this.categoryId,
+      this.attachmentPath,
+      this.voiceNotePath});
 
-class _Expense implements Expense {
-  const _Expense({required this.id, required this.amount, required this.description, required this.date, required this.categoryId, this.attachmentPath, this.voiceNotePath});
-  factory _Expense.fromJson(Map<String, dynamic> json) => _$ExpenseFromJson(json);
+  factory _$ExpenseImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ExpenseImplFromJson(json);
 
-@override final  String id;
-@override final  double amount;
-@override final  String description;
-@override final  DateTime date;
-@override final  String categoryId;
-@override final  String? attachmentPath;
-@override final  String? voiceNotePath;
+  @override
+  final String id;
+  @override
+  final double amount;
+  @override
+  final String description;
+  @override
+  final DateTime date;
+  @override
+  final String categoryId;
+  @override
+  final String? attachmentPath;
+  @override
+  final String? voiceNotePath;
 
-/// Create a copy of Expense
-/// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-_$ExpenseCopyWith<_Expense> get copyWith => __$ExpenseCopyWithImpl<_Expense>(this, _$identity);
+  @override
+  String toString() {
+    return 'Expense(id: $id, amount: $amount, description: $description, date: $date, categoryId: $categoryId, attachmentPath: $attachmentPath, voiceNotePath: $voiceNotePath)';
+  }
 
-@override
-Map<String, dynamic> toJson() {
-  return _$ExpenseToJson(this, );
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ExpenseImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.amount, amount) || other.amount == amount) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.date, date) || other.date == date) &&
+            (identical(other.categoryId, categoryId) ||
+                other.categoryId == categoryId) &&
+            (identical(other.attachmentPath, attachmentPath) ||
+                other.attachmentPath == attachmentPath) &&
+            (identical(other.voiceNotePath, voiceNotePath) ||
+                other.voiceNotePath == voiceNotePath));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(runtimeType, id, amount, description, date,
+      categoryId, attachmentPath, voiceNotePath);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ExpenseImplCopyWith<_$ExpenseImpl> get copyWith =>
+      __$$ExpenseImplCopyWithImpl<_$ExpenseImpl>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$ExpenseImplToJson(
+      this,
+    );
+  }
 }
 
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Expense&&(identical(other.id, id) || other.id == id)&&(identical(other.amount, amount) || other.amount == amount)&&(identical(other.description, description) || other.description == description)&&(identical(other.date, date) || other.date == date)&&(identical(other.categoryId, categoryId) || other.categoryId == categoryId)&&(identical(other.attachmentPath, attachmentPath) || other.attachmentPath == attachmentPath)&&(identical(other.voiceNotePath, voiceNotePath) || other.voiceNotePath == voiceNotePath));
+abstract class _Expense implements Expense {
+  const factory _Expense(
+      {required final String id,
+      required final double amount,
+      required final String description,
+      required final DateTime date,
+      required final String categoryId,
+      final String? attachmentPath,
+      final String? voiceNotePath}) = _$ExpenseImpl;
+
+  factory _Expense.fromJson(Map<String, dynamic> json) = _$ExpenseImpl.fromJson;
+
+  @override
+  String get id;
+  @override
+  double get amount;
+  @override
+  String get description;
+  @override
+  DateTime get date;
+  @override
+  String get categoryId;
+  @override
+  String? get attachmentPath;
+  @override
+  String? get voiceNotePath;
+  @override
+  @JsonKey(ignore: true)
+  _$$ExpenseImplCopyWith<_$ExpenseImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-@JsonKey(includeFromJson: false, includeToJson: false)
-@override
-int get hashCode => Object.hash(runtimeType,id,amount,description,date,categoryId,attachmentPath,voiceNotePath);
-
-@override
-String toString() {
-  return 'Expense(id: $id, amount: $amount, description: $description, date: $date, categoryId: $categoryId, attachmentPath: $attachmentPath, voiceNotePath: $voiceNotePath)';
-}
-
-
-}
-
-/// @nodoc
-abstract mixin class _$ExpenseCopyWith<$Res> implements $ExpenseCopyWith<$Res> {
-  factory _$ExpenseCopyWith(_Expense value, $Res Function(_Expense) _then) = __$ExpenseCopyWithImpl;
-@override @useResult
-$Res call({
- String id, double amount, String description, DateTime date, String categoryId, String? attachmentPath, String? voiceNotePath
-});
-
-
-
-
-}
-/// @nodoc
-class __$ExpenseCopyWithImpl<$Res>
-    implements _$ExpenseCopyWith<$Res> {
-  __$ExpenseCopyWithImpl(this._self, this._then);
-
-  final _Expense _self;
-  final $Res Function(_Expense) _then;
-
-/// Create a copy of Expense
-/// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? amount = null,Object? description = null,Object? date = null,Object? categoryId = null,Object? attachmentPath = freezed,Object? voiceNotePath = freezed,}) {
-  return _then(_Expense(
-id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
-as String,amount: null == amount ? _self.amount : amount // ignore: cast_nullable_to_non_nullable
-as double,description: null == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
-as String,date: null == date ? _self.date : date // ignore: cast_nullable_to_non_nullable
-as DateTime,categoryId: null == categoryId ? _self.categoryId : categoryId // ignore: cast_nullable_to_non_nullable
-as String,attachmentPath: freezed == attachmentPath ? _self.attachmentPath : attachmentPath // ignore: cast_nullable_to_non_nullable
-as String?,voiceNotePath: freezed == voiceNotePath ? _self.voiceNotePath : voiceNotePath // ignore: cast_nullable_to_non_nullable
-as String?,
-  ));
-}
-
-
-}
-
-// dart format on
